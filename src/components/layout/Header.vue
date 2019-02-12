@@ -7,6 +7,9 @@
         <!---->
         |
         <router-link class="link" to="/about">About</router-link>
+         <!---->
+        |
+        <router-link class="link" to="/contact">Contact</router-link>
       </div>
     </header>
   </div>
