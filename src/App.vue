@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div class="parent" id="app">
     <Header/>
     <router-view/>
   </div>
@@ -13,5 +13,10 @@ export default {
   }
 };
 </script>
-<style>
+<style scoped>
+.parent {
+  max-width: 1366px;
+  margin: 0 auto !important;
+  float: none !important;
+}
 </style>

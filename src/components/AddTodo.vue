@@ -1,8 +1,14 @@
 <template>
   <div>
     <form @submit="addTodo">
-      <input type="text" v-model="title" name="title" placeholder="add todo">
-      <input type="submit" value="Submit" class="btn">
+      <div class="todoForm" style="display: flex">
+        <div style="flex: 1 0 auto">
+          <input class="textInput" type="text" v-model="title" name="title" placeholder="add todo">
+        </div>
+        <div style="flex: 0 1 auto">
+          <input type="submit" value="Submit" class="btn">
+        </div>
+      </div>
     </form>
   </div>
 </template>
@@ -28,6 +34,12 @@ export default {
 };
 </script>
 <style scoped>
+.todoForm {
+  width: 100%;
+}
+.textInput {
+  width: 100%;
+}
 </style>
 
 
